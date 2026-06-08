@@ -1,5 +1,8 @@
 spriteTypes = {
-
+	spriteType = {
+		name = "GFX_portrait_POL_pilsudski"
+		textureFile = "gfx/leaders/POL/portrait_POL_pilsudski.dds"
+	}
     spriteType = {
 		name = "GFX_autonomy_commonwealth_subject_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"

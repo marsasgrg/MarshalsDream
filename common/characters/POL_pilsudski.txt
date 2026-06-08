@@ -1,0 +1,16 @@
+characters = {
+	POL_pilsudski = {
+		name = POL_pilsudski
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_pilsudski"
+			}
+		}
+
+		
+		country_leader = {
+			ideology=oligarchism
+			expire="1937.1.1.1"
+		}
+	}
+}
