@@ -17,7 +17,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_focus_POL_we_are_cooked_shine"
-		texturefile = "gfx/interface/goals/focus_POL_we_are_cooked.dds"
+		textureFile = "gfx/interface/goals/focus_POL_we_are_cooked.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_POL_we_are_cooked.dds"
