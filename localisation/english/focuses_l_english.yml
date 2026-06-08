@@ -1,4 +1,8 @@
 ﻿l_english:
-  POL_dream_fullfilled: "The Dream Fullfilled"
-  POL_dream_fullfilled_desc: "We are free from the Germans, free from the Russians, free from everything. Our order will last forever. Long live Poland, long live the Prometheist Commonwealth!"
+  POL_dream_fullfilled: "[Root.DreamFullfilled]"
+  PilsudskiDream: "The Dream Fullfilled"
+  PilsudskiDead: "Salvage the Situation"
+  POL_dream_fullfilled_desc: "[Root.DreamFullfilledDesc]"
+  PilsudskiDreamDesc: "We are free from the Germans, free from the Russians, free from everything. Our order will last forever. Long live Poland, long live the Prometheist Commonwealth!"
+  PilsudskiDeadDesc: "He's dead, the Marshal is dead. We must save the Commonwealth!"
   custom_tt_lies: "§2Focuses about reshaping and expanding the @POL§!§RCommonwealth§!§2 will appear!!!§!"

@@ -11,7 +11,15 @@ focus_tree = {
     initial_show_position = { focus = POL_dream_fullfilled }
     focus = {
         id = POL_dream_fullfilled
-        icon = GFX_focus_POL_consolidate_sanation_government
+        icon = {
+            trigger = {
+                POL_Pilsudski = {is_country_leader = yes}
+            }
+            value = GFX_focus_POL_consolidate_sanation_government
+        }
+        icon = {
+            value = GFX_focus_POL_we_are_cooked
+        }
         cost = 15
         x = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
@@ -25,6 +33,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = "custom_tt_lies"
         }
+        dynamic = yes
     }
 
 }
