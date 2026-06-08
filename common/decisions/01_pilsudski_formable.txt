@@ -82,3 +82,551 @@ form_commonwealth_category = {
 		}
 	}
 }
+form_transcaucasus_category = {
+	
+	form_transcaucasian_republic = { 
+
+		icon = generic_form_nation
+
+		allowed = {
+			always = no
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			NOT = { has_global_flag = form_transcaucasia_flag }
+		}
+
+		available = {
+			controls_state = 826 # Abkhazia
+			controls_state = 231 # Georgia
+			controls_state = 230 # Armenia
+			controls_state = 229 # Azerbaijan
+		}
+
+		on_map_mode = decision_view_only
+
+		highlight_states = { 
+			highlight_state_targets = {
+				state = 826 # Abkhazia
+				state = 231 # Georgia
+				state = 230 # Armenia
+				state = 229 # Azerbaijan
+			}
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = transcaucasia_unified
+			
+			# Abkhazia
+			826 = { add_core_of = ROOT }
+			
+			# Georgia
+			231 = { add_core_of = ROOT }
+			 
+			# Armenia
+			230 = { add_core_of = ROOT }
+			
+			# Azerbaijan
+			229 = { add_core_of = ROOT }
+			
+			hidden_effect = { 
+				news_event = { id = nsb_news.302 hours = 8 }
+				set_global_flag = form_transcaucasia_flag
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+	
+	
+	
+	unite_azeris = {  
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			has_global_flag = form_transcaucasia_flag
+			NOT = { has_global_flag = azeris_united_flag }
+			has_dlc = "No Step Back"
+		}
+
+		available = {
+			controls_state = 419 # West AZR
+			controls_state = 1000 # East AZR
+			controls_state = 420 # Gilan
+		}
+
+		complete_effect = {
+			
+			# West AZR
+			419 = { add_core_of = ROOT }
+
+			# East AZR
+			1000 = { add_core_of = ROOT }
+			
+			# Gilan
+			420 = { add_core_of = ROOT }
+			
+			hidden_effect = { 
+				set_global_flag = azeris_united_flag
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+	
+	
+	claim_northern_caucasus = {  
+
+		icon = generic_form_nation
+
+		allowed = {
+			always = no
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			has_global_flag = form_transcaucasia_flag
+			NOT = { has_global_flag = northern_caucasus_claimed_flag }
+			has_dlc = "No Step Back"
+		}
+
+		available = {
+			controls_state = 232 # Dagestan
+			controls_state = 821 # Chechnya-Ingushetia
+			controls_state = 828 # North Ossetia
+			controls_state = 827 # Kabardino-Balkaria
+			controls_state = 233 # Sochi
+		}
+
+		complete_effect = {
+			
+			# Sochi
+			233 = { add_core_of = ROOT }
+			
+			# Kabardino-Balkaria
+			827 = { add_core_of = ROOT }
+			
+			# North Ossetia
+			828 = { add_core_of = ROOT }
+			
+			# Chechnya-Ingushetia
+			821 = { add_core_of = ROOT }
+			
+			# Gagestan
+			232 = { add_core_of = ROOT }
+			
+			#add_ideas = soldiers_of_the_steppe
+			
+			hidden_effect = { 
+				set_global_flag = northern_caucasus_claimed_flag
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+	
+	
+	liberate_anatolian_peoples = {  
+
+		icon = generic_form_nation
+
+		allowed = {
+			always = no
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			has_global_flag = form_transcaucasia_flag
+			NOT = { has_global_flag = anatolians_liberated_flag }
+			has_dlc = "No Step Back"
+		}
+
+		available = {
+			controls_state = 354 # Trabzon
+			controls_state = 800 # Van
+		}
+
+		complete_effect = {
+			
+			# Trabzon
+			354 = { add_core_of = ROOT }
+			
+			# Van
+			800 = { add_core_of = ROOT }
+			
+			hidden_effect = { 
+				set_global_flag = anatolians_liberated_flag
+			}
+		}
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+	
+	
+	restore_kalmyks = {  
+
+		icon = generic_form_nation
+
+		allowed = {
+			always = no
+		}
+  
+		available = {
+			is_subject = no
+			controls_state = 237 # Kalmykia
+			controls_state = 236 # Astrakhan
+			NOT = { has_government = communism }
+			NOT = { has_government = democratic }
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			has_global_flag = form_transcaucasia_flag
+			NOT = { has_global_flag = kalmyk_khanate_restored_flag }
+
+				has_dlc = "No Step Back" 
+		}
+
+		complete_effect = {
+			
+			custom_effect_tooltip = release_kalmyk_khanate_tt
+			
+			hidden_effect = { 
+			
+				set_global_flag = kalmyk_khanate_restored_flag
+				
+				# Astrakhan
+				236 = { add_core_of = KAL }
+				
+				KAL = {
+					transfer_state = 237
+					transfer_state = 236
+					if = {
+						limit = {
+							ROOT = { controls_state = 217 } #Stalingrad
+						}
+						add_state_core = 217
+						transfer_state = 217
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 407 } #Uralsk
+						}
+						add_state_core = 407
+						transfer_state = 407
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 406 } #Guryev
+						}
+						add_state_core = 406
+						transfer_state = 406
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 401 } #Balakovo
+						}
+						add_state_core = 401
+						transfer_state = 401
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 829 } #Engels-Marxstadt
+						}
+						add_state_core = 829
+						transfer_state = 829
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 238 } #Volgodonsk
+						}
+						add_state_core = 238
+						transfer_state = 238
+					}
+					load_oob = "KAL_khanate_battalions"
+				}
+				
+				puppet = KAL
+				
+				if = {
+					limit = {
+						has_war_with = SOV
+					}
+					KAL = {
+						add_to_war = {
+							targeted_alliance = PREV 
+							enemy = SOV
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				
+				
+				
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	
+	restore_crimean_khanate = {  
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				always = no
+			} 
+		}
+  
+		available = {
+			is_subject = no
+			controls_state = 137 # Crimea
+			controls_state = 196 # Kherson
+			NOT = { has_government = communism }
+			NOT = { has_government = democratic }
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			has_global_flag = form_transcaucasia_flag
+			NOT = { has_global_flag = crimean_khanate_restored_flag }
+
+				has_dlc = "No Step Back"
+		}
+
+		complete_effect = {
+			
+			custom_effect_tooltip = restore_crimean_khanate_tt 
+			
+			
+			hidden_effect = { 
+			
+				set_global_flag = crimean_khanate_restored_flag
+				
+				CRI = {
+					transfer_state = 137 # Crimea
+					transfer_state = 196 # Kherson
+					if = {
+						limit = {
+							ROOT = { controls_state = 200 } #Zaporozhe
+						}
+						add_state_core = 200
+						transfer_state = 200
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 227 } #Stalino
+						}
+						add_state_core = 227
+						transfer_state = 227
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 218 } #Rostov
+						}
+						add_state_core = 218
+						transfer_state = 218
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 228 } #Voroshilovgrad
+						}
+						add_state_core = 228
+						transfer_state = 228
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 234 } #Krasnodar
+						}
+						add_state_core = 234
+						transfer_state = 234
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 245 } #Millerovo
+						}
+						add_state_core = 245
+						transfer_state = 245
+					}
+					if = {
+						limit = {
+							ROOT = { controls_state = 226 } #Dnipropetrovsk
+						}
+						add_state_core = 226
+						transfer_state = 226
+					}
+					load_oob = "CRI_khanate_soldiers"
+				}
+				
+				puppet = CRI
+				
+				if = {
+					limit = {
+						has_war_with = SOV
+					}
+					CRI = {
+						add_to_war = {
+							targeted_alliance = ROOT 
+							enemy = SOV
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_war_with = UKR
+					}
+					CRI = {
+						add_to_war = {
+							targeted_alliance = ROOT 
+							enemy = UKR
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				
+				
+				
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	
+	
+	release_turkish_kurdistan = {  
+
+		icon = generic_form_nation
+
+		allowed = {
+			always = no
+		}
+  
+		available = {
+			is_subject = no
+			controls_state = 352 # Hakkari
+			controls_state = 353 # Tunceli
+			controls_state = 350 # Diyarbakir
+		}
+
+		visible = {
+			OR = {
+				original_tag = GEO # Georgia
+				original_tag = ARM # Armenia
+				original_tag = AZR # Azerbaijan
+			}
+			has_global_flag = form_transcaucasia_flag
+			NOT = { has_global_flag = anatolian_kurds_subjugated_flag }
+
+				has_dlc = "No Step Back"
+		}
+
+		complete_effect = {
+			
+			custom_effect_tooltip = release_anatolian_kurdistan_tt 
+			
+			
+			hidden_effect = { 
+			
+				set_global_flag = anatolian_kurds_subjugated_flag
+				
+				KUR = {
+					transfer_state = 350 # Diyarbakir
+					transfer_state = 352 # Hakkari
+					transfer_state = 353 # Tunceli
+					if = {
+						limit = {
+							ROOT = { controls_state = 344 } #Malatya
+						}
+						add_state_core = 344
+						transfer_state = 344
+					}
+					load_oob = "KUR_liberation_troops"
+				}
+				
+				puppet = KUR
+				
+				if = {
+					limit = {
+						has_war_with = TUR
+					}
+					KUR = {
+						add_to_war = {
+							targeted_alliance = ROOT 
+							enemy = TUR
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+				
+				
+				
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
