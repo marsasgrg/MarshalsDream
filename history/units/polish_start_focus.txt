@@ -1,0 +1,4 @@
+focus = {
+    current = POL_dream_fullfilled
+    progress = 0
+}

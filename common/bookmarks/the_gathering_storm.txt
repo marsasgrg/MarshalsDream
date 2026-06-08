@@ -86,14 +86,10 @@ bookmarks = {
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				uncontrolled_exports
-				POL_april_constitution_1
-				POL_looming_peasants_strike
+				
 			}
 			focuses = {
-				POL_complete_april_constitution
-				POL_clamp_down_on_danzig
-				POL_the_between_the_seas_concept
+				POL_dream_fullfilled
 			}
 		}
 

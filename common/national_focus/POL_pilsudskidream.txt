@@ -1,0 +1,27 @@
+focus_tree = {
+    id = marshals_dream_focus_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 1000
+            original_tag = POL
+        }
+    }
+    continuous_focus_position = { x = 450 y = 600 }
+    initial_show_position = { focus = POL_dream_fullfilled }
+    focus = {
+        id = POL_dream_fullfilled
+        icon = GFX_focus_POL_consolidate_sanation_government
+        cost = 15
+        x = 10
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        cancelable = no
+        ai_will_do = {
+            base = 3
+        }
+        available = {
+            always = yes
+        }
+    }
+
+}
