@@ -760,3 +760,5 @@ if = {
 		}
 	}
 }
+set_cosmetic_tag = PLC_UNIFIED
+

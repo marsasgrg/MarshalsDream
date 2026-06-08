@@ -1,0 +1,10 @@
+﻿l_english:
+ PLC_UNIFIED_neutrality:0 "Prometheist Commonwealth"
+ PLC_UNIFIED_fascism:0 "Empire of Prometheus"
+ PLC_UNIFIED_democratic:0 "Promethean Union"
+ PLC_UNIFIED_communism:1 "Commonwealth of Socialprometheist Republics"
+ PLC_UNIFIED_neutrality_DEF:0 "the Prometheist Commonwealth"
+ PLC_UNIFIED_fascism_DEF:0 "the Empire of Prometheus"
+ PLC_UNIFIED_democratic_DEF:0 "the Promethean Union"
+ PLC_UNIFIED_communism_DEF:2 "the Commonwealth of Socialprometheist Republics"
+ PLC_UNIFIED_ADJ:0 "Prometheist"

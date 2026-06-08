@@ -1,5 +1,5 @@
 capital = 64
-
+oob = "german_templates_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

@@ -1,0 +1,84 @@
+
+form_commonwealth_category = {
+
+	form_commonwealth = {
+
+		icon = generic_form_nation
+
+		allowed = {
+            always = no
+		}
+
+		available = {
+			is_subject = no
+			# Lithuania
+			custom_trigger_tooltip = {
+				tooltip = form_country_lithuania_required_states_tt
+				controls_state = 11
+				controls_state = 189
+			}
+			# Poland
+			custom_trigger_tooltip = {
+				tooltip = form_country_poland_required_states_tt
+				controls_state = 86
+				controls_state = 87
+				controls_state = 88
+				controls_state = 90
+				controls_state = 98
+				controls_state = 10
+				controls_state = 97
+				controls_state = 92
+				controls_state = 91
+				controls_state = 89
+				controls_state = 93
+				controls_state = 94
+				controls_state = 95
+				controls_state = 96
+				controls_state = 784
+			}
+			OR = {
+				AND = {
+					original_tag = POL
+					core_compliance = {
+						occupied_country_tag = LIT
+						value > 80
+					}
+				}
+				AND = {
+					original_tag = LIT
+					core_compliance = {
+						occupied_country_tag = POL
+						value > 80
+					}
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = POL
+				original_tag = LIT
+			}
+			NOT = { has_global_flag = form_commonwealth_flag }
+		}
+
+		complete_effect = {
+			if = {
+				limit = { has_cosmetic_tag = POL_KINGDOM_RUS }
+				set_cosmetic_tag = PLC_UNIFIED_RUS
+			}
+			else = {
+				set_cosmetic_tag = PLC_UNIFIED
+			}
+			POL_basic_form_commonwealth = yes
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
