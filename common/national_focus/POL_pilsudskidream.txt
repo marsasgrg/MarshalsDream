@@ -22,6 +22,9 @@ focus_tree = {
         available = {
             always = yes
         }
+        completion_reward = {
+            custom_effect_tooltip = "custom_tt_lies"
+        }
     }
 
 }
