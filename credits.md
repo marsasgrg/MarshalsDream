@@ -1,0 +1,1 @@
+Using Pilsudski portrait https://steamcommunity.com/sharedfiles/filedetails/?id=2893731324 by Knispel
