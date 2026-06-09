@@ -1,0 +1,77 @@
+add_namespace = polish_civil_war_news
+
+news_event = { # Balt Victory
+	id = polish_civil_war_news.01
+	title = polish_civil_war_news.01.t
+	desc = polish_civil_war_news.01.desc
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = polish_civil_war_news.01.a
+		trigger = {
+            OR = {
+                tag = EST
+    			tag = LAT
+            }
+		}
+	}
+    option = {
+        name = polish_civil_war_news.01.b
+        trigger = {
+            OR = {
+                tag = POL
+            }
+        }
+    }
+	option = {
+		name = polish_civil_war_news.01.c
+		trigger = {
+            NOT = {
+                OR = {
+                    tag = POL
+                    tag = EST
+                    tag = LAT
+                }
+            }
+		}
+	}
+	
+}
+
+news_event = { # Baltic German Victory
+	id = polish_civil_war_news.02
+	title = polish_civil_war_news.02.t
+	desc = polish_civil_war_news.02.desc
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = polish_civil_war_news.02.a
+		trigger = {
+            tag = LIV
+		}
+	}
+    option = {
+        name = polish_civil_war_news.02.b
+        trigger = {
+            OR = {
+                tag = POL
+            }
+        }
+    }
+	option = {
+		name = polish_civil_war_news.02.c
+		trigger = {
+            NOT = {
+                OR = {
+                    tag = LIV
+                    tag = LAT
+                }
+            }
+		}
+	}
+	
+}

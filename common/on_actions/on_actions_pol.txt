@@ -9,4 +9,36 @@ on_actions = {
             }
         }
     }
+    on_capitulation_immediate = { 
+        effect = {
+            if = { 
+                limit = { 
+                    OR = {
+                        FROM = {tag = EST}
+                        FROM = {tag = LAT}
+                    }
+                    ROOT = {tag = LIV}
+                }
+                kill_livonia = yes
+                LAT = {
+                    dismantle_faction = yes
+                    country_event = {
+                        id = polish_civil_war_news.01
+                    }
+                }
+            }
+            if = { 
+                limit = { 
+                    ROOT = {tag = LAT}
+                    FROM = {tag = LIV}
+                }
+                kill_latvia_and_estonia = yes
+                LIV = {
+                    country_event = {
+                        id = polish_civil_war_news.02
+                    }
+                }
+            }
+        }
+    } 
 }

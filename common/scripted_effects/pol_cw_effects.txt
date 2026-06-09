@@ -109,6 +109,35 @@ livonia_break_free = {
     }
 }
 
+kill_livonia = {
+    LIV = {
+        every_owned_state = {
+            IF = {
+                limit = {
+                    is_core_of = EST
+                }
+                transfer_state_to = EST
+            }
+            else = {
+                transfer_state_to = LAT
+            }
+        }
+    }
+}
+
+kill_latvia_and_estonia = {
+    LAT = {
+        every_owned_state = {
+            transfer_state_to = LIV
+        }
+    }
+    EST = {
+        every_owned_state = {
+            transfer_state_to = LIV
+        }
+    }
+}
+
 #break_ukraine_free_from_poland = {
 #    POL = {
 #        every_owned_state = {
