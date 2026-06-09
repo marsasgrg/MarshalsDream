@@ -1,0 +1,65 @@
+germany_and_konigsberg_break_free = {
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 188
+            }
+        }
+        188 = {
+            transfer_state_to = DDR
+            add_core_of = DDR
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 5
+            }
+        }
+        5 = {
+            transfer_state_to = DDR
+            add_core_of = DDR
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 763
+            }
+        }
+        763 = {
+            transfer_state_to = DDR
+            add_core_of = DDR
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 85
+            }
+        }
+        85 = {
+            transfer_state_to = DDR
+            add_core_of = DDR
+        }
+    }
+
+    POL = { end_puppet = DDR}
+}
+
+#break_ukraine_free_from_poland = {
+#    POL = {
+#        every_owned_state = {
+#            IF = {
+#                limit = {
+#                    
+#                }
+#                transfer_state_to = UKR
+#            }
+#        }
+#    }
+#}

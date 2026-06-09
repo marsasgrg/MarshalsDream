@@ -9,7 +9,7 @@ country_event = { # The Golden Year
         hidden_effect = {
             country_event = {
                 id = polish_civil_war.2
-                days = 35
+                days = 21
             }
         }
     }
@@ -74,11 +74,15 @@ country_event = { # The Funeral
         hidden_effect = {
             country_event = {
                 id = polish_civil_war.5
-                days = 14
+                days = 7
+            }
+            country_event = {
+                id = polish_civil_war.10
+                days = 40
             }
         }       
     }
-
+    timeout_days = 6
     option = { # May He rest in peace
         name = polish_civil_war.4.a
         custom_effect_tooltip = custom_tt_they_begin_to_make_their_plays
@@ -96,7 +100,6 @@ country_event = { # Tell Me, Where Does Fortune Lie - Pick approximate start
         #set_country_flag = player_wants_poland
         country_event = {
             id = polish_civil_war.6
-            days = 3
         } 
     }
     option = {
@@ -104,7 +107,6 @@ country_event = { # Tell Me, Where Does Fortune Lie - Pick approximate start
         #set_country_flag = player_wants_east_slavia
         country_event = {
             id = polish_civil_war.7
-            days = 3
         }
     }
     option = {
@@ -112,7 +114,6 @@ country_event = { # Tell Me, Where Does Fortune Lie - Pick approximate start
         #set_country_flag = player_wants_livonia
         country_event = {
             id = polish_civil_war.8
-            days = 3
         }
     }
     option = {
@@ -120,7 +121,6 @@ country_event = { # Tell Me, Where Does Fortune Lie - Pick approximate start
         #set_country_flag = player_wants_lithuania
         country_event = {
             id = polish_civil_war.9
-            days = 3
         }
     }
 }
@@ -169,6 +169,10 @@ country_event = {
         name = polish_civil_war.7.b
         set_country_flag = POL_civil_war_go_ukraine
     }
+    option = { # Cossack Realm
+        name = polish_civil_war.7.c
+        set_country_flag = POL_civil_war_go_cossack
+    }
 }
 
 country_event = {
@@ -187,7 +191,7 @@ country_event = {
         name = polish_civil_war.8.b
         set_country_flag = POL_civil_war_go_estonia
     }
-    option = { # Estonia
+    option = { # Baltic Germans
         name = polish_civil_war.8.c
         set_country_flag = POL_civil_war_go_baltic_german
     }
@@ -211,5 +215,104 @@ country_event = {
     option = { # Lithuanian Soviet Republic
         name = polish_civil_war.9.c
         set_country_flag = POL_civil_war_go_soviet
+    }
+}
+
+country_event = { # Germany and Konigsberg break free
+    id = polish_civil_war.10
+    title = polish_civil_war.10.t
+    desc = polish_civil_war.10.desc
+    
+    immediate = {
+        hidden_effect = {
+            germany_and_konigsberg_break_free = yes
+            country_event = {
+                id = polish_civil_war.11
+                days = 7
+            }          
+        }
+    }
+    is_triggered_only = yes
+    
+    option = { # Damnations!
+        name = polish_civil_war.10.a
+        effect_tooltip = {
+            custom_effect_tooltip = germany_and_konigsberg_break
+        }
+    }
+}
+
+country_event = { # Ukraine, Cossack-Tatar Realm and Belarus break free
+    id = polish_civil_war.11
+    title = polish_civil_war.11.t
+    desc = polish_civil_war.11.desc
+    
+    immediate = {
+        hidden_effect = {
+            every_owned_state = {
+                IF = {
+                    limit = {
+                        is_core_of = UKR
+                    }
+                    transfer_state_to = UKR
+                }
+                IF = {
+                    limit = {
+                        is_core_of = BLR
+                    }
+                    transfer_state_to = BLR
+                }
+                IF = {
+                    limit = {
+                        is_core_of = CRI
+                        NOT = {
+                            is_core_of = UKR
+                        }
+                    }
+                    transfer_state_to = CRI
+                }
+            }
+            CRI = {
+                set_cosmetic_tag = CRI_COSSACK_TATAR
+            }
+            IF = {
+                limit = {
+                    has_country_flag = POL_civil_war_go_belarus
+                }
+                BLR = { change_tag_from = POL }
+            }
+            IF = {
+                limit = {
+                    has_country_flag = POL_civil_war_go_ukraine
+                }
+                UKR = { change_tag_from = POL }
+            }
+            IF = {
+                limit = {
+                    has_country_flag = POL_civil_war_go_ukraine
+                }
+                BLR = { change_tag_from = POL }
+            }
+        }
+    }
+    is_triggered_only = yes
+    
+    option = { # Damnations!
+        name = polish_civil_war.11.a
+        trigger = {
+            tag = POL
+        }
+        effect_tooltip = {
+            custom_effect_tooltip = blr_and_ukraine_break
+        }
+    }
+    option = { # Long live freedom!
+        name = polish_civil_war.11.b
+        trigger = {
+            NOT = {tag = POL}
+        }
+        effect_tooltip = {
+            custom_effect_tooltip = blr_and_ukraine_break
+        }
     }
 }
