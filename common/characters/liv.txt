@@ -1,0 +1,14 @@
+characters = {
+    LIV_alfred_rosenberg = {
+        name = GER_alfred_rosenberg
+        portraits = {
+			civilian = {
+				large = GFX_portrait_GER_alfred_rosenberg
+				small = GFX_portrait_GER_alfred_rosenberg_small
+			}
+		}
+        country_leader = {
+            ideology = gen_nazism
+        }
+    }
+}

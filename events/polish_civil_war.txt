@@ -293,6 +293,12 @@ country_event = { # Ukraine, Cossack-Tatar Realm and Belarus break free
                 }
                 CRI = { change_tag_from = POL }
             }
+            POL = {
+                country_event = {
+                    id = polish_civil_war.12
+                    days = 3
+                }
+            }
         }
     }
     is_triggered_only = yes
@@ -313,6 +319,97 @@ country_event = { # Ukraine, Cossack-Tatar Realm and Belarus break free
         }
         effect_tooltip = {
             custom_effect_tooltip = blr_and_ukraine_break
+        }
+    }
+}
+
+country_event = { # Livonian mess
+    id = polish_civil_war.12
+    title = polish_civil_war.12.t
+    desc = polish_civil_war.12.desc
+    
+    immediate = {
+        hidden_effect = {
+            livonia_break_free = yes
+            every_owned_state = {
+                IF = {
+                    limit = {
+                        is_core_of = LAT
+                    }
+                    transfer_state_to = LAT
+                }
+                IF = {
+                    limit = {
+                        is_core_of = EST
+                    }
+                    transfer_state_to = EST
+                }
+            }
+            IF = {
+                limit = {
+                    has_country_flag = POL_civil_war_go_latvia
+                }
+                LAT = { change_tag_from = POL }
+            }
+            IF = {
+                limit = {
+                    has_country_flag = POL_civil_war_go_estonia
+                }
+                EST = { change_tag_from = POL }
+            }
+            IF = {
+                limit = {
+                    has_country_flag = POL_civil_war_go_baltic_german
+                }
+                LIV = { change_tag_from = POL }
+            }
+            LIV = {
+                declare_war_on = {
+				    target = LAT
+				    type = take_core_state
+			    }
+            }
+            LIV = {
+                declare_war_on = {
+				    target = EST
+				    type = take_core_state
+			    }
+            }
+            LAT = {
+                create_faction_from_template = faction_template_defensive_democratic
+                set_faction_name = defense_against_livonia
+                add_to_faction = EST
+                remove_ideas = {
+                    LAT_perkonkrust_idea
+                    democratic_opposition
+                    LAT_paramilitary_idea
+                }
+                set_politics = {
+                    ruling_party = democratic
+                }
+                load_focus_tree = generic_focus
+            }
+            EST = {
+                remove_ideas = {
+                    democratic_opposition
+                    EST_vaps_idea_1
+                }
+                set_politics = {
+                    ruling_party = democratic
+                }
+                load_focus_tree = generic_focus
+            }	
+        }
+    }
+    is_triggered_only = yes
+    
+    option = { # Damnations!
+        name = polish_civil_war.12.a
+        trigger = {
+            tag = POL
+        }
+        effect_tooltip = {
+            custom_effect_tooltip = baltic_break
         }
     }
 }

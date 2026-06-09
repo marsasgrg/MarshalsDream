@@ -51,6 +51,64 @@ germany_and_konigsberg_break_free = {
     POL = { end_puppet = DDR}
 }
 
+livonia_break_free = {
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 811
+            }
+        }
+        811 = {
+            transfer_state_to = LIV
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 812
+            }
+        }
+        812 = {
+            transfer_state_to = LIV
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 13
+            }
+        }
+        13 = {
+            transfer_state_to = LIV
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 12
+            }
+        }
+        12 = {
+            transfer_state_to = LIV
+        }
+    }
+    IF = {
+        limit = {
+            any_country = {
+                original_tag = POL
+                controls_state = 808
+            }
+        }
+        808 = {
+            transfer_state_to = LIV
+        }
+    }
+}
+
 #break_ukraine_free_from_poland = {
 #    POL = {
 #        every_owned_state = {
