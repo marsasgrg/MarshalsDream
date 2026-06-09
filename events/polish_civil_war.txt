@@ -70,9 +70,146 @@ country_event = { # The Funeral
     desc = polish_civil_war.4.desc
     is_triggered_only = yes
 
-    
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = polish_civil_war.5
+                days = 14
+            }
+        }       
+    }
+
     option = { # May He rest in peace
         name = polish_civil_war.4.a
         custom_effect_tooltip = custom_tt_they_begin_to_make_their_plays
+    }
+}
+
+country_event = { # Tell Me, Where Does Fortune Lie - Pick approximate start
+    id = polish_civil_war.5
+    title = polish_civil_war.5.t
+    desc = polish_civil_war.5.desc
+    is_triggered_only = yes
+    
+    option = {
+        name = polish_civil_war.5.a #Poland
+        #set_country_flag = player_wants_poland
+        country_event = {
+            id = polish_civil_war.6
+            days = 7
+        } 
+    }
+    option = {
+        name = polish_civil_war.5.b #East Slavia
+        #set_country_flag = player_wants_east_slavia
+        country_event = {
+            id = polish_civil_war.7
+            days = 7
+        }
+    }
+    option = {
+        name = polish_civil_war.5.c #Livonia
+        #set_country_flag = player_wants_livonia
+        country_event = {
+            id = polish_civil_war.8
+            days = 7
+        }
+    }
+    option = {
+        name = polish_civil_war.5.d #Lithuania
+        #set_country_flag = player_wants_lithuania
+        country_event = {
+            id = polish_civil_war.9
+            days = 7
+        }
+    }
+}
+
+country_event = {
+    id = polish_civil_war.6
+    title = polish_civil_war.6.t
+    desc = polish_civil_war.6.desc
+    
+    is_triggered_only = yes
+    
+    option = { # Monarchism, Sejmik Regency
+        name = polish_civil_war.6.a
+        set_country_flag = POL_civil_war_go_monarchist
+    }
+
+    option = { # "Polonist" fascism, Rydz
+        name = polish_civil_war.6.b
+        set_country_flag = POL_civil_war_go_fascist
+    }
+    
+    option = { # Unaligned Oligarchic, Mosycki
+        name = polish_civil_war.6.c
+        set_country_flag = POL_civil_war_go_prometheist_continuation
+    }
+
+    option = { # Democratic/Communist, Walery Sławek
+        name = polish_civil_war.6.d
+        set_country_flag = POL_civil_war_go_prometheist_left
+    }
+}
+
+country_event = {
+    id = polish_civil_war.7
+    title = polish_civil_war.7.t
+    desc = polish_civil_war.7.desc
+    
+    is_triggered_only = yes
+    
+    option = { # Belarus
+        name = polish_civil_war.7.a
+        set_country_flag = POL_civil_war_go_belarus
+    }
+
+    option = { # Ukraine
+        name = polish_civil_war.7.b
+        set_country_flag = POL_civil_war_go_ukraine
+    }
+}
+
+country_event = {
+    id = polish_civil_war.8
+    title = polish_civil_war.8.t
+    desc = polish_civil_war.8.desc
+    
+    is_triggered_only = yes
+    
+    option = { # Latvia
+        name = polish_civil_war.8.a
+        set_country_flag = POL_civil_war_go_latvia
+    }
+
+    option = { # Estonia
+        name = polish_civil_war.8.b
+        set_country_flag = POL_civil_war_go_estonia
+    }
+    option = { # Estonia
+        name = polish_civil_war.8.c
+        set_country_flag = POL_civil_war_go_baltic_german
+    }
+}
+
+country_event = {
+    id = polish_civil_war.9
+    title = polish_civil_war.9.t
+    desc = polish_civil_war.9.desc
+    
+    is_triggered_only = yes
+    
+    option = { # Free Lithuania
+        name = polish_civil_war.9.a
+        set_country_flag = POL_civil_war_go_free_lithuania
+    }
+    option = { # GDL
+        name = polish_civil_war.9.b
+        set_country_flag = POL_civil_war_go_GDL
+    }
+    option = { # Lithuanian Soviet Republic
+        name = polish_civil_war.9.c
+        set_country_flag = POL_civil_war_go_soviet
     }
 }
