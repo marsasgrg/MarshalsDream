@@ -25,6 +25,10 @@ on_actions = {
                     country_event = {
                         id = polish_civil_war_news.01
                     }
+                    remove_opinion_modifier = {
+                        target = EST
+                        modifier = faction_traitor
+                    }
                 }
             }
             if = { 
