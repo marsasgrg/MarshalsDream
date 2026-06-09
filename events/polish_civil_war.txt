@@ -1,0 +1,24 @@
+add_namespace = polish_civil_war
+
+country_event = {
+    id = polish_civil_war.1
+    title = polish_civil_war.1.t
+    desc = polish_civil_war.1.desc
+    immediate = {
+        hidden_effect = {
+            retire_character = POL_Pilsudski
+            promote_character = POL_ignacy_moscicki
+        }
+    }
+
+    is_triggered_only = yes
+    
+    option = { # We must ensure the integrity of the Commonwealth!
+        name = polish_civil_war.1.a
+        effect_tooltip = {
+            retire_character = POL_Pilsudski
+            promote_character = POL_ignacy_moscicki
+        }
+    }
+
+}

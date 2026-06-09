@@ -2,14 +2,27 @@ defined_text = {
     name = DreamFullfilled 
     text = {
         trigger = {
-            POL_Pilsudski = {is_country_leader = yes}
+            POL = {
+                has_country_leader = {
+                    name = "Józef Piłsudski"
+                    ruling_only = yes
+                }
+            }
         }
         localization_key = PilsudskiDream
     }
     text = {
         trigger = {
-            POL_Pilsudski = {is_country_leader = no}
+            NOT = {
+                POL = {
+                    has_country_leader = {
+                        name = "Józef Piłsudski"
+                        ruling_only = yes
+                    }
+                }
+            }
         }
+        
         localization_key = PilsudskiDead
     }
 }
@@ -17,13 +30,25 @@ defined_text = {
     name = DreamFullfilledDesc
     text = {
         trigger = {
-            POL_Pilsudski = {is_country_leader = yes}
+            POL = {
+                has_country_leader = {
+                    name = "Józef Piłsudski"
+                    ruling_only = yes
+                }
+            }
         }
         localization_key = PilsudskiDreamDesc
     }
     text = {
         trigger = {
-            POL_Pilsudski = {is_country_leader = no}
+            NOT = {
+                POL = {
+                    has_country_leader = {
+                        name = "Józef Piłsudski"
+                        ruling_only = yes
+                    }
+                }
+            }
         }
         localization_key = PilsudskiDeadDesc
     }

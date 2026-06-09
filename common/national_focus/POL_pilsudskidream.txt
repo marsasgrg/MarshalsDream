@@ -13,11 +13,19 @@ focus_tree = {
         id = POL_dream_fullfilled
         icon = {
             trigger = {
-                POL_Pilsudski = {is_country_leader = yes}
+                POL = {
+                    has_country_leader = {
+                        name = "Józef Piłsudski"
+                        ruling_only = yes
+                    }
+                }
             }
             value = GFX_focus_POL_consolidate_sanation_government
         }
         icon = {
+            trigger = {
+				always = yes
+			}
             value = GFX_focus_POL_we_are_cooked
         }
         cost = 15
