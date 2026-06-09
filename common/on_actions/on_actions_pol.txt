@@ -31,10 +31,13 @@ on_actions = {
                     }
                 }
             }
+
             if = { 
                 limit = { 
-                    ROOT = {tag = LAT}
-                    FROM = {tag = LIV}
+                    AND = {
+                        ROOT = {tag = LAT}
+                        FROM = {tag = LIV}
+                    }
                 }
                 kill_latvia_and_estonia = yes
                 LIV = {
