@@ -1,24 +1,78 @@
 add_namespace = polish_civil_war
 
-country_event = {
+country_event = { # The Golden Year
     id = polish_civil_war.1
     title = polish_civil_war.1.t
     desc = polish_civil_war.1.desc
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = polish_civil_war.2
+                days = 35
+            }
+        }
+    }
+    option = { # Glory to the Commonwealth
+        name = polish_civil_war.1.a
+    }
+}
+
+country_event = { # Pilsudski Ill
+    id = polish_civil_war.2
+    title = polish_civil_war.2.t
+    desc = polish_civil_war.2.desc
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = polish_civil_war.3
+                days = 14
+            }
+        }
+    }
+    
+    option = { # We pray for the Marshal's health
+        name = polish_civil_war.2.a
+    }
+}
+
+country_event = { # Pilsudski Dies
+    id = polish_civil_war.3
+    title = polish_civil_war.3.t
+    desc = polish_civil_war.3.desc
     immediate = {
         hidden_effect = {
             retire_character = POL_Pilsudski
             promote_character = POL_ignacy_moscicki
+
+            country_event = {
+                id = polish_civil_war.4
+                days = 5
+            }
         }
     }
-
     is_triggered_only = yes
     
     option = { # We must ensure the integrity of the Commonwealth!
-        name = polish_civil_war.1.a
+        name = polish_civil_war.3.a
         effect_tooltip = {
             retire_character = POL_Pilsudski
             promote_character = POL_ignacy_moscicki
         }
     }
 
+}
+
+country_event = { # The Funeral
+    id = polish_civil_war.4
+    title = polish_civil_war.4.t
+    desc = polish_civil_war.4.desc
+    is_triggered_only = yes
+
+    
+    option = { # May He rest in peace
+        name = polish_civil_war.4.a
+        custom_effect_tooltip = custom_tt_they_begin_to_make_their_plays
+    }
 }

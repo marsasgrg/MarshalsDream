@@ -1,7 +1,14 @@
 ﻿l_english:
-  polish_civil_war.1.t: "Pilsudski Dies"
-  polish_civil_war.1.desc: "The great Marshal Józef Piłsudski has died, what happens now?"
-  polish_civil_war.1.a: "We must ensure the integrity of the Commonwealth!"
-
-  
-  
+  polish_civil_war.1.t: "The Golden Year"
+  polish_civil_war.1.desc: "After the invasion of Germany with French help in 1933 and the war to save the Batlic states from Soviet interference in 1934, the @POL§!§RPrometheist Commonwealth§! has been formed. The year 1935 has been glorious, with the Marshal continuing to help us build a beautiful country. Let's hope that this year is as great as the last one."
+  polish_civil_war.1.a: "Glory to the the @POL§!§RCommonwealth§!!"
+  polish_civil_war.2.t: "Pilsudski Ill"
+  polish_civil_war.2.desc: "The great Marshal has contracted some sort of illness. His doctors are already working to ensure his health, and he should recover soon."
+  polish_civil_war.2.a: "Let's pray for his fast recovery!"
+  polish_civil_war.3.t: "Pilsudski Dies"
+  polish_civil_war.3.desc: "The great Marshal Józef Piłsudski has died, what happens now?"
+  polish_civil_war.3.a: "We must ensure the integrity of the Commonwealth!"
+  polish_civil_war.4.t: "The Funeral"
+  polish_civil_war.4.desc: "The Marshal has been buried in two parts - his heart has been laid to rest in Wilno (and his brain given to the university there), while his body is in Krakow.\nNow, our goal is to maintain the Commonwealth he built."
+  polish_civil_war.4.a: "May He rest in peace"
+  custom_tt_they_begin_to_make_their_plays: "The @LIT@LAT@EST@UKR@BLR§Rvultures§! are coming out of their nests... Prepare."

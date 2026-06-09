@@ -4,7 +4,7 @@ on_actions = {
             POL = {
                 country_event = {
                     id = polish_civil_war.1
-                    days = 5 # 70 after testing
+                    days = 3
                 }
             }
         }
