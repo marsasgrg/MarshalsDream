@@ -4,8 +4,8 @@ news_event = { # Balt Victory
 	id = polish_civil_war_news.01
 	title = polish_civil_war_news.01.t
 	desc = polish_civil_war_news.01.desc
-	picture = GFX_news_event_generic_sign_treaty2
-    
+	picture = GFX_news_event_generic_parliament
+
 	is_triggered_only = yes
 	major = yes
 	
@@ -45,7 +45,7 @@ news_event = { # Baltic German Victory
 	id = polish_civil_war_news.02
 	title = polish_civil_war_news.02.t
 	desc = polish_civil_war_news.02.desc
-	picture = GFX_news_event_generic_sign_treaty2
+	picture = GFX_news_event_generic_army
 
 	is_triggered_only = yes
 	major = yes
