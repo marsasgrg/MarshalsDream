@@ -612,51 +612,8 @@ bookmarks = {
 		}
 		
 		
-		"LIT"={
-			minor = yes
-			history = "LIT_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				LIT_agrarian_society
-				LIT_iron_wolf_idea_bad_1
-			}
-			focuses = {
-				LIT_free_voldemares
-				LIT_a_king_for_our_people
-				LIT_reminder_of_true_enemy
-			}
 		}
-		
-		"LAT"={
-			minor = yes
-			history = "LAT_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				LAT_perkonkrust_idea
-				democratic_opposition
-			}
-			focuses = {
-				LAT_military_dictatorship
-				LAT_womens_aizsargi
-				LAT_the_old_ways
-			}
-		}
-		
-		"EST"={
-			minor = yes
-			history = "EST_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				EST_vaps_idea_1
-				democratic_opposition
-			}
-			focuses = {
-				EST_era_of_silence
-				EST_fight_the_vaps
-				EST_unite_our_nations
-			}
-		}
-		# DDR AND WGR HERE LAYER
+		# DDR AND WGR HERE LATER
 
 		"ETH"={
 			minor = yes

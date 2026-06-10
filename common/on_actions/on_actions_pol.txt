@@ -32,11 +32,16 @@ on_actions = {
                 }
             }
 
+
+        }
+    }
+    on_before_peace_conference_start = {
+        effect = {
             if = { 
                 limit = { 
                     AND = {
-                        ROOT = {tag = LAT}
-                        FROM = {tag = LIV}
+                        ROOT = {tag = LIV}
+                        FROM = {tag = LAT}
                     }
                 }
                 kill_latvia_and_estonia = yes
