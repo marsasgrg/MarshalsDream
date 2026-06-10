@@ -371,12 +371,11 @@ country_event = { # Livonian mess
 				    target = LAT
 				    type = take_core_state
 			    }
-            }
-            LIV = {
                 declare_war_on = {
 				    target = EST
 				    type = take_core_state
 			    }
+                load_oob = "LIV_livonian_war"
             }
             LAT = {
                 create_faction_from_template = faction_template_defensive_democratic
@@ -391,6 +390,7 @@ country_event = { # Livonian mess
                     ruling_party = democratic
                 }
                 load_focus_tree = generic_focus
+                load_oob = "LAT_livonian_war"
             }
             EST = {
                 remove_ideas = {
@@ -401,6 +401,7 @@ country_event = { # Livonian mess
                     ruling_party = democratic
                 }
                 load_focus_tree = generic_focus
+                load_oob = "EST_livonian_war"
             }	
         }
     }

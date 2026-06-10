@@ -19,6 +19,7 @@ on_actions = {
                     }
                     ROOT = {tag = LIV}
                 }
+                kill_baltic_volunteers = yes
                 kill_livonia = yes
                 LAT = {
                     dismantle_faction = yes
@@ -44,6 +45,7 @@ on_actions = {
                         FROM = {tag = LAT}
                     }
                 }
+                kill_baltic_volunteers = yes
                 kill_latvia_and_estonia = yes
                 LIV = {
                     country_event = {

@@ -150,3 +150,25 @@ kill_latvia_and_estonia = {
 #        }
 #    }
 #}
+
+
+kill_baltic_volunteers = {
+    LIV = {
+        delete_unit_template_and_units = {
+            division_template = "Freikorps"
+            disband = yes #if yes, will refund equipment/manpower.
+        }
+    }
+    LAT = {
+        delete_unit_template_and_units = {
+            division_template = "Latvian Territorial Defence Volunteers"
+            disband = yes #if yes, will refund equipment/manpower.
+        }
+    }
+    EST = {
+        delete_unit_template_and_units = {
+            division_template = "Estonian Territorial Defence Volunteers"
+            disband = yes #if yes, will refund equipment/manpower.
+        }
+    }
+}

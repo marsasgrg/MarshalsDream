@@ -1,0 +1,70 @@
+﻿division_template = {
+	name = "Freikorps"
+	is_locked = yes
+	template_counter = 3 # The Crossed Rifles
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Freikorps"
+		location = 9340
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "2. Freikorps"
+		location = 10323
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "3. Freikorps"
+		location = 10493
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "4. Freikorps"
+		location = 3388
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "5. Freikorps"
+		location = 9501
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "6. Freikorps"
+		location = 308
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "7. Freikorps"
+		location = 6381
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "8. Freikorps"
+		location = 496
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "9. Freikorps"
+		location = 11426
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "10. Freikorps"
+		location = 9340
+		division_template = "Freikorps"
+	}
+	division = {
+		name = "11. Freikorps"
+		location = 11302
+		division_template = "Freikorps"
+	}
+}

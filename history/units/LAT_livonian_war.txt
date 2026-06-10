@@ -1,0 +1,45 @@
+﻿division_template = {
+	name = "Latvian Territorial Defence Volunteers"
+	is_locked = yes
+	template_counter = 3 # The Crossed Rifles
+	division_names_group = LAT_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. LTDF"
+		location = 3298
+		division_template = "Latvian Territorial Defence Volunteers"
+	}
+	division = {
+		name = "2. LTDF"
+		location = 11222
+		division_template = "Latvian Territorial Defence Volunteers"
+	}
+	division = {
+		name = "3. LTDF"
+		location = 7482
+		division_template = "Latvian Territorial Defence Volunteers"
+	}
+	division = {
+		name = "4. LTDF"
+		location = 3255
+		division_template = "Latvian Territorial Defence Volunteers"
+	}
+	division = {
+		name = "5. LTDF"
+		location = 265
+		division_template = "Latvian Territorial Defence Volunteers"
+	}
+	division = {
+		name = "6. LTDF"
+		location = 6222
+		division_template = "Latvian Territorial Defence Volunteers"
+	}
+}
