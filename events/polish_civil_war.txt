@@ -395,7 +395,6 @@ country_event = { # Livonian mess
                 set_politics = {
                     ruling_party = democratic
                 }
-                load_focus_tree = generic_focus
                 load_oob = "LAT_livonian_war"
             }
             EST = {
@@ -409,7 +408,6 @@ country_event = { # Livonian mess
                 set_politics = {
                     ruling_party = democratic
                 }
-                load_focus_tree = generic_focus
                 load_oob = "EST_livonian_war"
             }	
         }

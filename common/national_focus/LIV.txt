@@ -1,0 +1,32 @@
+focus_tree = {
+    id = LIV_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 1000
+            original_tag = LIV
+        }
+    }
+    shared_focus = BALTIC_rejoin_the_railways
+    continuous_focus_position = { x = 100 y = 700 }
+    initial_show_position = {
+        focus = LIV_rosenbergs_dream
+    }
+    focus = {
+        id = LIV_rosenbergs_dream
+        icon = GFX_goal_support_fascism
+
+
+        cost = 5
+        x = 15
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        ai_will_do = {
+            base = 3
+        }
+        completion_reward = {
+            add_political_power = 100
+        }
+       
+    }
+
+}

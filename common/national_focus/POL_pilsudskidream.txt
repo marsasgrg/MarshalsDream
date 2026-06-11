@@ -32,9 +32,6 @@ focus_tree = {
         ai_will_do = {
             base = 3
         }
-        available = {
-            always = yes
-        }
         completion_reward = {
             custom_effect_tooltip = "custom_tt_lies"
         }

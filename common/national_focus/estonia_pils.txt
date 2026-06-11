@@ -1,0 +1,14 @@
+focus_tree = {
+    id = EST_tree
+    country = {
+        base = 0
+        modifier = {
+            add = 1000
+            original_tag = EST
+        }
+    }
+    shared_focus = BALTIC_rejoin_the_railways
+    continuous_focus_position = { x = 100 y = 700 }
+
+
+}
