@@ -1,0 +1,40 @@
+ideas = {
+    country = {
+        livonian_war_chaos_LIV = {
+            name = livonian_war_chaos
+            picture = generic_army_problems
+            rule = {
+                can_join_factions = no
+            }
+            modifier = {
+                army_org_factor = -0.25
+                army_speed_factor = 0.25
+                training_time_factor = -0.25
+            }
+            targeted_modifier = {
+                tag = LAT
+                defense_bonus_against = -0.25
+                attack_bonus_against = 0.25
+            }
+            targeted_modifier = {
+                tag = EST
+                defense_bonus_against = -0.25
+                attack_bonus_against = 0.25
+            }
+        }
+        livonian_war_chaos_LAT_EST = {
+            name = livonian_war_chaos
+            picture = generic_army_problems
+            modifier = {
+                army_org_factor = -0.25
+                army_speed_factor = 0.25
+                training_time_factor = -0.25
+            }
+            targeted_modifier = {
+                tag = LIV
+                defense_bonus_against = -0.25
+                attack_bonus_against = 0.25
+            }
+        }
+    }
+}

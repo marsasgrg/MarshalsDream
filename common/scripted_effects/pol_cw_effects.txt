@@ -158,17 +158,26 @@ kill_baltic_volunteers = {
             division_template = "Freikorps"
             disband = yes #if yes, will refund equipment/manpower.
         }
+        remove_ideas = {
+            livonian_war_chaos_LIV
+        }
     }
     LAT = {
         delete_unit_template_and_units = {
             division_template = "Latvian Territorial Defence Volunteers"
             disband = yes #if yes, will refund equipment/manpower.
         }
+        remove_ideas = {
+            livonian_war_chaos_LAT_EST
+        }
     }
     EST = {
         delete_unit_template_and_units = {
             division_template = "Estonian Territorial Defence Volunteers"
             disband = yes #if yes, will refund equipment/manpower.
+        }
+        remove_ideas = {
+            livonian_war_chaos_LAT_EST
         }
     }
 }

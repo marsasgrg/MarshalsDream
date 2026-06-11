@@ -375,6 +375,9 @@ country_event = { # Livonian mess
 				    target = EST
 				    type = take_core_state
 			    }
+                add_ideas = {
+                    livonian_war_chaos_LIV
+                }
                 load_oob = "LIV_livonian_war"
             }
             LAT = {
@@ -386,6 +389,9 @@ country_event = { # Livonian mess
                     democratic_opposition
                     LAT_paramilitary_idea
                 }
+                add_ideas = {
+                    livonian_war_chaos_LAT_EST
+                }
                 set_politics = {
                     ruling_party = democratic
                 }
@@ -396,6 +402,9 @@ country_event = { # Livonian mess
                 remove_ideas = {
                     democratic_opposition
                     EST_vaps_idea_1
+                }
+                add_ideas = {
+                    livonian_war_chaos_LAT_EST
                 }
                 set_politics = {
                     ruling_party = democratic
