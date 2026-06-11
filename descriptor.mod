@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="The Marshal's Dream"
-supported_version="1.18.*"
+supported_version="1.19.*"
 replace_path="common/bookmarks"

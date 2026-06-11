@@ -12,22 +12,19 @@ focus_tree = {
     focus = {
         id = POL_dream_fullfilled
         icon = {
-            trigger = {
-                POL = {
-                    has_country_leader = {
-                        name = "Józef Piłsudski"
-                        ruling_only = yes
+			GFX_focus_POL_we_are_cooked = {
+				ROOT = {
+                    NOT = {
+                        has_country_leader = {
+                            name = "Józef Piłsudski"
+                            ruling_only = yes
+                        }
                     }
-                }
-            }
-            value = GFX_focus_POL_consolidate_sanation_government
-        }
-        icon = {
-            trigger = {
-				always = yes
+				}
 			}
-            value = GFX_focus_POL_we_are_cooked
-        }
+			GFX_focus_POL_consolidate_sanation_government = yes
+		}
+
         cost = 15
         x = 10
         search_filters = { FOCUS_FILTER_POLITICAL }
