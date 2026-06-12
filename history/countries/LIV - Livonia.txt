@@ -68,3 +68,6 @@ GER = {
 	retire_character = GER_alfred_rosenberg
 }
 recruit_character = LIV_alfred_rosenberg
+recruit_character = LIV_christian_will
+recruit_character = LIV_frank_franz
+recruit_character = LIV_friedrich_sturm

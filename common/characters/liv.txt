@@ -10,5 +10,112 @@ characters = {
         country_leader = {
             ideology = gen_nazism
         }
+        field_marshal = {
+			traits = { offensive_doctrine }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+    }
+    LIV_frank_franz = {
+        name = LIV_frank_franz
+        portraits = {
+            army = {
+                large = GFX_Portrait_Germany_Generic_land_1
+                small = GFX_Portrait_Germany_Generic_land_1_small
+            }
+        }
+        field_marshal = {
+			traits = { defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+        advisor = {
+            slot = army_chief
+            idea_token = LIV_frank_franz
+            ledger = army
+            allowed = {
+                original_tag = LIV
+            }
+            traits = {
+				army_chief_defensive_1
+			}
+            cost = 50
+            ai_will_do = {
+                factor = 1.000
+            }   
+        }    
+ 
+    }
+    LIV_christian_will = {
+        name = LIV_christian_will
+        portraits = {
+            army = {
+                large = GFX_Portrait_Germany_Generic_land_2
+                small = GFX_Portrait_Germany_Generic_land_2_small
+            }
+        }
+        corps_commander = {
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}      
+        advisor = {
+            slot = high_command
+            idea_token = LIV_christian_will
+            ledger = army
+            allowed = {
+                original_tag = LIV
+            }
+            traits = {
+				army_infantry_1
+			}
+            cost = 50
+            ai_will_do = {
+                factor = 1.000
+            }   
+        }      
+    }
+    LIV_friedrich_sturm = {
+        name = LIV_friedrich_sturm
+        portraits = {
+            army = {
+                large = GFX_Portrait_Germany_Generic_land_3
+                small = GFX_Portrait_Germany_Generic_land_3_small
+            }
+        }
+        corps_commander = {
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}  
+        advisor = {
+            slot = high_command
+            idea_token = LIV_friedrich_sturm
+            ledger = army
+            allowed = {
+                original_tag = LIV
+            }
+            traits = {
+				army_cavalry_1
+			}
+            cost = 50
+            ai_will_do = {
+                factor = 1.000
+            }   
+        }        
     }
 }

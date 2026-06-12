@@ -12,5 +12,14 @@ characters = {
 			ideology=oligarchism
 			expire="1937.1.1.1"
 		}
+		field_marshal = {
+			traits = { offensive_doctrine organisational_leader inspirational_leader skilled_staffer expert_delegator}
+			skill=9
+			attack_skill=10
+			defense_skill=10
+			planning_skill=10
+			logistics_skill=10
+			legacy_id=-1
+		}
 	}
 }
