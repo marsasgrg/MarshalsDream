@@ -1,0 +1,18 @@
+BLT_communist = {
+	name = "Baltic communist plan"
+	desc = ""
+
+	allowed = {
+		OR = {
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+		}
+	}
+
+	enable = {
+		always = no
+	}
+
+}
+

@@ -1,0 +1,13 @@
+EST_fascist = {
+	name = "Estonian fascist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = EST
+	}
+
+	enable = {
+		always = no
+	}
+
+}

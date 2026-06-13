@@ -1,13 +1,15 @@
 focus_tree = {
-    id = LIT_tree
+    id = estonia_tree
     country = {
         base = 0
         modifier = {
             add = 1000
-            original_tag = LIT
+            original_tag = EST
+            has_dlc = "No Step Back"
         }
     }
     shared_focus = BALTIC_rejoin_the_railways
     continuous_focus_position = { x = 100 y = 700 }
+
 
 }

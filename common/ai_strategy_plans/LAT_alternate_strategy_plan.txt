@@ -1,0 +1,14 @@
+LAT_fascist = {
+	name = "Latvian fascist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = LAT
+	}
+
+	enable = {
+		always = no
+	}
+
+}
+
